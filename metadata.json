@@ -1,5 +1,5 @@
 {
-  "dataset-site-url": "https://flex-tv.github.io/",
+  "dataset-site-url": "http://data.joinflex.tv/",
   "title": "Flex Live Video Sessions",
   "description": "Session data from the joinflex.tv site",
   "publisher-name": "Flex",
@@ -13,8 +13,9 @@
   "license-name": "Creative Commons Attribution Licence (CC-BY v4.0)",
   "license-url": "https://creativecommons.org/licenses/by/4.0/",
   "attribution-text": "Flex",
-  "attribution-url": "https://flex-tv.github.io/",
+  "attribution-url": "http://data.joinflex.tv/",
   "mailchimp": "require([\"mojo/signup-forms/Loader\"], function(L) { L.start({\"baseUrl\":\"mc.us12.list-manage.com\",\"uuid\":\"eb115dbe747973fd8e8fa6d4f\",\"lid\":\"e80fcf66ea\"}) })",
   "copyright-notice": "",
-  "odi-certificate-number": ""
+  "odi-certificate-number": "",
+  "publish": true
 }
