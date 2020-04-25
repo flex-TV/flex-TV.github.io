@@ -40,31 +40,47 @@
     <!-- JSON-LD conforming to Google Structured Data specification. -->
     <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "Dataset",
-      "name" : "Flex Live Video Sessions",
-      "id": "http://data.joinflex.tv/",
+      "@context": [
+        "https://schema.org/",
+        "https://openactive.io/"
+      ],
+      "@type": "Dataset",
+      "@id": "http://data.joinflex.tv/",
       "url": "http://data.joinflex.tv/",
-      "description" : "Session data from the joinflex.tv site; published using OpenActive RPDE v0.2.3.",
+      "name": "Flex Live Video Sessions",
+      "description": "Session data from the joinflex.tv site; published using OpenActive RPDE v0.2.3.",
       "keywords":[
-         "Live video",
-         "Workouts",
-         "OpenActive"
+          "Live video",
+          "Workouts",
+          "OpenActive"
       ],
       "license" : "https://creativecommons.org/licenses/by/4.0/",
-      "distribution" : {
-        "@type" : "DataDownload",
-        "encodingFormat" : "application/vnd.openactive.rpde+json; version=0.2.3",
-        "contentUrl" : "https://api.joinflex.tv/v1/open"
-      },
-      "inLanguage": "en-GB",
+      "distribution": [
+        {
+          "@type" : "DataDownload",
+          "encodingFormat" : "application/vnd.openactive.rpde+json; version={rpdeversion}",
+          "contentUrl" : "https://api.joinflex.tv/v1/open"
+        }
+      ],
+      "discussionUrl": "https://github.com/flex-tv/opendata/issues",
+      "documentation": "https://github.com/flex-tv/opendata",
+      "inLanguage": [
+        "en-GB"
+      ],
       "publisher": {
-         "@type": "Organization", 
-         "name": "Flex",
-         "url": "https://www.joinflex.tv/",
-         "logo": "http://data.joinflex.tv/images/logo.png"
+        "@type": "Organization",
+        "name": "Flex",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://data.joinflex.tv/images/logo.png"
+        },
+        "url": "https://www.joinflex.tv/"
       },
-      "datePublished" : "2016-07-17T00:00:00.000Z"
+      "datePublished": "2016-07-17T00:00:00.000Z",
+      "backgroundImage": {
+        "@type": "ImageObject",
+        "url": "http://data.joinflex.tv/images/bg.jpg"
+      }
     }
     </script>
   </head>
